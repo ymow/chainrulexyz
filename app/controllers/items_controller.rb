@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
 
     def letsencrypt
       # use your code here, not mine
-      render text: "y-6cu5U4qWfoGamZC3F65dt-X6LgP7aDaqdq8gOLClU.KO8F57nZUhGg60_ZhS8MFMh5WQp4TwjZAeom8kL4ONg"
+      render text: "1_wiPfNeq9oBqShSkM845TLtpVdMey2i4gBOjljOHBk.KO8F57nZUhGg60_ZhS8MFMh5WQp4TwjZAeom8kL4ONg"
     end
 
   def index
