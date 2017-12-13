@@ -3,6 +3,11 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:show]
   before_action :set_user_item, only: [:edit, :update, :toggle]
 
+    def letsencrypt
+      # use your code here, not mine
+      render text: "pU7qV66PuLwB8n7t07ig5iQd9n_RVl4BRTtHQAYX-sM.KO8F57nZUhGg60_ZhS8MFMh5WQp4TwjZAeom8kL4ONg"
+    end
+
   def index
     order = params[:newest] ? {created_at: :desc} : {rank: :desc}
 
