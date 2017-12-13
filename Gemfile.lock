@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
+    acme-client (0.6.1)
+      faraday (~> 0.9, >= 0.9.1)
     actionmailer (4.2.0)
       actionpack (= 4.2.0)
       actionview (= 4.2.0)
@@ -77,6 +79,9 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     jwt (1.5.1)
+    letsencrypt_plugin (0.0.10)
+      acme-client (~> 0.6.1)
+      rails (>= 4.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -218,6 +223,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   jquery-rails
+  letsencrypt_plugin
   pg
   pry
   quiet_assets

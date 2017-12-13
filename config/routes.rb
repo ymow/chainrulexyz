@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get 'login' => 'user_sessions#new', as: :login
   match 'logout' => 'user_sessions#destroy', as: :logout, via: [:get, :post]
 
+  get '/.well-known/acme-challenge/:id' => 'pages#letsencrypt'
+  
   namespace :admin do
     root to: 'items#index'
     resources :items
